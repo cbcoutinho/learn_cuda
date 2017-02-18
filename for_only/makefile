@@ -1,9 +1,9 @@
 
 build:
-	gfortran -O3 cuda_mem.f90 -L/usr/local/cuda/lib64 -lcudart -o cuda_mem
+	gfortran -O3 cuda_mem.f90 -lcudart
 
 run: build
-	./cuda_mem
+	./a.out
 
 clean:
 	rm -rf *.o *.mod cuda_mem
